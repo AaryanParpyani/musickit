@@ -18,11 +18,11 @@ fps = 60
 timer = pygame.time.Clock()
 
 def draw_grid():
-    left_box = python.draw.rect(screen, gray, [0,0,200,HEIGHT], 5)
+    left_box = pygame.draw.rect(screen, gray, [0,0, 200,HEIGHT - 150], 5)
     bottom_box = pygame.draw.rect(screen, gray, [0, HEIGHT - 200, WIDTH, 200], 5)
     boxes = []
     colors = [gray, white, white]
-    hi_hat_text = label_font.render('Hi Hat', True)
+    # hi_hat_text = label_font.render('Hi Hat', True)
 
 run = True 
 while run:
@@ -36,5 +36,4 @@ while run:
     
     pygame.display.flip()
 pygame.quit()
-
 
