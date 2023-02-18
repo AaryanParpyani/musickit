@@ -28,6 +28,7 @@ run = True
 while run:
     timer.tick(fps)
     screen.fill(black)
+    draw_grid()
 
     for event in pygame.event.get(): #any event taking place
         if event.type == pygame.QUIT:
