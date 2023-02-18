@@ -49,8 +49,8 @@ def draw_grid():
                 color=gray
             else:
                 color=green
-            rect = pygame.draw.rect(screen, color, [i * ((WIDTH - 200) // beats) + 210, (j * 100)+5, ((WIDTH - 200) // beats)-10, ((HEIGHT - 200)//instruments)-10], 0,3 )
-            pygame.draw.rect(screen, gold, [i * ((WIDTH - 200) // beats) + 205, (j * 100), ((WIDTH - 225) // beats), ((HEIGHT - 200)//instruments)], 5, 5)
+            rect = pygame.draw.rect(screen, color, [i * ((WIDTH - 200) // beats) + 211, (j * 100)+3, ((WIDTH - 200) // beats)-10, ((HEIGHT - 200)//instruments)-10], 0 ,3 )
+            pygame.draw.rect(screen, gold, [i * ((WIDTH - 200) // beats) + 205, (j * 100), ((WIDTH - 200) // beats), ((HEIGHT - 200)//instruments)], 5, 5)
             pygame.draw.rect(screen, black, [i * ((WIDTH - 200) // beats) + 205, (j * 100), ((WIDTH - 200) // beats), ((HEIGHT - 200)//instruments)], 2, 5)
             boxes.append((rect, (i, j)))
     return boxes
